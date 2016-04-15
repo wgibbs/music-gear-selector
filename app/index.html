@@ -18,13 +18,14 @@
     <h1>MUSIC GEAR SELECTOR</h1>
     <nav>
       <ul>
-        <li><a href="" ng-repeat="item in items | unique: 'category'" ng-click="filters.category = item.category">{{item.category}}</a></li>
         <li><a href="" ng-click="filters.category = ''">All Items</a></li>
+        <li ng-repeat="item in items | unique: 'category'"><a href="" ng-click="filters.category = item.category">{{item.category}}</a></li>
       </ul>
+      <label>Search &#8594; <input ng-model="searchText"></label>
     </nav><!-- end nav -->
   </header><!-- end header -->
   <section>
-    <div ng-repeat="item in items | filter:filters">
+    <div ng-repeat="item in items | filter:filters | filter:searchText">
       <img ng-src="{{item.imageUrl}}" alt="{{item.name}}">
       <h2>{{item.name}}</h2>
       <p>Condition: {{item.condition}}</p>
