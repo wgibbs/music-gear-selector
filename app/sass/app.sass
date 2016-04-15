@@ -18,16 +18,24 @@ header
   text-align: center
 
   h1
-    border-bottom: 1px solid #000
     font-size: 30px
+    margin: 0
+    padding: 10px
     @media screen and (max-width: $break-med)
       font-size: 26px
     @media screen and (max-width: $break-small)
       font-size: 20px
+      padding: 5px
   
   nav
-    max-width: $container-max
     margin: 0 auto 20px
+    height: 35px
+    background: #000
+    width: 100%
+    @media screen and (max-width: $break-med)
+      height: 30px
+    @media screen and (max-width: $break-small)
+      height: 25px
 
     ul
      list-style: none
@@ -40,8 +48,8 @@ header
        a
         margin: 0 15px
         text-decoration: none
-        color: #000
-        font-size: 24px
+        color: #FFF
+        font-size: 22px
         text-transform: uppercase
         cursor: pointer
         @media screen and (max-width: $break-med)
@@ -58,6 +66,9 @@ header
         &:focus,
         &.active
           outline: none
+
+        &.sel
+          color: #F00
 
 section
   max-width: $container-max

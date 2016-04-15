@@ -1,5 +1,13 @@
 [
   {
+    "category": "Amps",
+    "id": "marshall-jmp1",
+    "imageUrl": "img/marshall-jmp1.jpg",
+    "name": "Marshall JMP-1 Tube Preamp",
+    "condition": "Used - Fair",
+    "price": "$350"
+  },
+  {
     "category": "Effects",
     "id": "mxr-dyna-comp",
     "imageUrl": "img/mxr-dyna-comp.jpg",
@@ -54,14 +62,6 @@
     "name": "D'Addario Bass Strings",
     "condition": "New",
     "price": "$20"
-  },
-  {
-    "category": "Amps",
-    "id": "marshall-jmp1",
-    "imageUrl": "img/marshall-jmp1.jpg",
-    "name": "Marshall JMP-1 Tube Preamp",
-    "condition": "Used - Fair",
-    "price": "$350"
   },
   {
     "category": "Effects",
