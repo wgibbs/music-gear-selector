@@ -1,0 +1,19 @@
+{
+  "name": "music-gear-selector",
+  "version": "1.0.0",
+  "description": "A single page Angular app used to select variuos categories of music gear.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgibbs/music-gear-selector.git"
+  },
+  "author": "wes gibbs",
+  "bugs": {
+    "url": "https://github.com/wgibbs/music-gear-selector/issues"
+  },
+  "homepage": "https://github.com/wgibbs/music-gear-selector#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

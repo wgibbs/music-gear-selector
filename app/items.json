@@ -1,0 +1,130 @@
+[
+  {
+    "category": "Effects",
+    "id": "mxr-dyna-comp",
+    "imageUrl": "img/mxr-dyna-comp.jpg",
+    "name": "MXR Dyna Comp",
+    "condition": "Used - Good",
+    "price": "$40"
+  },
+  {
+    "category": "Amps",
+    "id": "line6-pod-pro",
+    "imageUrl": "img/line6-pod-pro.jpg",
+    "name": "Line 6 POD Pro Preamp",
+    "condition": "Used - Excellent",
+    "price": "$140"
+  },
+  {
+    "category": "Effects",
+    "id": "mxr-carbon-copy",
+    "imageUrl": "img/mxr-carbon-copy.jpg",
+    "name": "MXR Carbon Copy Delay",
+    "condition": "Used - Fair",
+    "price": "$100"
+  },
+  {
+    "category": "Effects",
+    "id": "boss-sd1",
+    "imageUrl": "img/boss-sd1.jpg",
+    "name": "Boss SD1 Overdrive",
+    "condition": "Used - Excellent",
+    "price": "$30"
+  },
+  {
+    "category": "Guitars",
+    "id": "epiphone-g400",
+    "imageUrl": "img/epiphone-g400.jpg",
+    "name": "Epiphone G-400 Guitar",
+    "condition": "Used - Good",
+    "price": "$200"
+  },
+  {
+    "category": "Guitars",
+    "id": "gibson-sg",
+    "imageUrl": "img/gibson-sg.jpg",
+    "name": "Gibson SG Bass",
+    "condition": "Used - Excellent",
+    "price": "$500"
+  },
+  {
+    "category": "Strings",
+    "id": "daddario-bass-strings",
+    "imageUrl": "img/daddario-strings.jpg",
+    "name": "D'Addario Bass Strings",
+    "condition": "New",
+    "price": "$20"
+  },
+  {
+    "category": "Amps",
+    "id": "marshall-jmp1",
+    "imageUrl": "img/marshall-jmp1.jpg",
+    "name": "Marshall JMP-1 Tube Preamp",
+    "condition": "Used - Fair",
+    "price": "$350"
+  },
+  {
+    "category": "Effects",
+    "id": "boss-ls2",
+    "imageUrl": "img/boss-ls2.jpg",
+    "name": "Boss LS2 Line Selector",
+    "condition": "Used - Fair",
+    "price": "$40"
+  },
+  {
+    "category": "Strings",
+    "id": "ernie-ball-slinky",
+    "imageUrl": "img/ernie-ball-slinky.jpg",
+    "name": "Ernie Ball Regular Slinky Strings",
+    "condition": "New",
+    "price": "$5"
+  },
+  {
+    "category": "Amps",
+    "id": "ada-mp1",
+    "imageUrl": "img/ada-mp1.jpg",
+    "name": "ADA MP-1 Tube Preamp",
+    "condition": "Used - Fair",
+    "price": "$140"
+  },
+  {
+    "category": "Effects",
+    "id": "turbo-rat",
+    "imageUrl": "img/turbo-rat.jpg",
+    "name": "Pro Co Turbo Rat Distortion",
+    "condition": "Used - Fair",
+    "price": "$60"
+  },
+  {
+    "category": "Guitars",
+    "id": "fender-strat",
+    "imageUrl": "img/fender-strat.jpg",
+    "name": "Fender Stratocaster Hwy 1",
+    "condition": "Used - Good",
+    "price": "$550"
+  },
+  {
+    "category": "Effects",
+    "id": "micro-pog",
+    "imageUrl": "img/micro-pog.jpg",
+    "name": "EHX Micro POG Octave",
+    "condition": "Used - Excellent",
+    "price": "$120"
+  },
+  {
+    "category": "Effects",
+    "id": "boss-rv3",
+    "imageUrl": "img/boss-rv3.jpg",
+    "name": "Boss RV3",
+    "condition": "Used - Fair",
+    "price": "$120"
+  },
+  {
+    "category": "Effects",
+    "id": "tech-21-sans-amp",
+    "imageUrl": "img/tech-21-sans-amp.jpg",
+    "name": "Tech 21 Sans Amp Bass DI",
+    "condition": "Used - Excellent",
+    "price": "$140"
+  }
+]

@@ -1,0 +1,95 @@
+//Variables
+$break-med: 700px
+$break-small: 480px
+$container-max: 960px
+
+//Mixins
+@mixin transition($duration)
+  -webkit-transition: $duration
+  -moz-transition: $duration
+  -ms-transition: $duration
+  -o-transition: $duration
+  transition: $duration
+
+body
+  font-family: 'Open Sans', sans-serif
+
+header
+  text-align: center
+
+  h1
+    border-bottom: 1px solid #000
+    font-size: 30px
+    @media screen and (max-width: $break-med)
+      font-size: 26px
+    @media screen and (max-width: $break-small)
+      font-size: 20px
+  
+  nav
+    max-width: $container-max
+    margin: 0 auto 20px
+
+    ul
+     list-style: none
+     margin: 0
+     padding: 0
+
+     li
+       display: inline-block
+
+       a
+        margin: 0 15px
+        text-decoration: none
+        color: #000
+        font-size: 24px
+        text-transform: uppercase
+        cursor: pointer
+        @media screen and (max-width: $break-med)
+          font-size: 18px
+          margin: 0 10px
+        @media screen and (max-width: $break-small)
+          font-size: 14px
+          margin: 0 5px
+
+        &:hover
+          @include transition(.4s)
+          color: #F00
+
+        &:focus,
+        &.active
+          outline: none
+
+section
+  max-width: $container-max
+  margin: 0 auto
+  padding: 20px 0
+  text-align: center
+  background: #e2e2e2
+  padding: 20px
+
+  div
+    max-width: 280px
+    display: inline-block
+    margin: 10px
+    padding: 0 0 10px
+    background: #FFF
+    border: 10px solid #FFF
+  
+    h2
+      font-size: 16px
+      padding: 0
+      margin: 5px 0 0
+      font-weight: normal
+
+    p
+      font-size: 14px
+      margin: 0
+
+    h2, p
+      text-align: left
+      color: #FFF
+      line-height: 1.2
+      color: #000
+
+    img
+      border: 1px solid #e2e2e2
