@@ -3,6 +3,7 @@ $break-med: 700px
 $break-small: 480px
 $container-max: 960px
 $default-gray: #e2e2e2
+$default-red: #F00
 
 //Mixins
 @mixin transition($duration)
@@ -60,26 +61,26 @@ header
 
          &:hover
            @include transition(.4s)
-           color: #F00
+           color: $default-red
 
          &:focus,
          &.active
            outline: none
 
          &.active
-           color: #F00
+           color: $default-red
     
     label
-      font-size: 16px
+      font-size: 14px
       color: #FFF
       margin: 10px 0 0
       display: block
       text-transform: uppercase
       @media screen and (max-width: $break-small)
-        font-size: 14px
+        font-size: 12px
 
       input
-        border: 1px solid #FFF
+        border: 5px solid $default-gray
         padding: 3px
 
 section
