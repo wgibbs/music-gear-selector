@@ -101,6 +101,7 @@ section
     padding: 0 0 10px
     background: #FFF
     border: 10px solid #FFF
+    text-align: left
     @include transition(.4s)
     @media screen and (max-width: $break-small)
       max-width: 260px
@@ -120,12 +121,53 @@ section
         font-size: 12px
 
     h2, p
-      text-align: left
       color: #FFF
       line-height: 1.2
       color: #000
 
     img
-      border: 1px solid $default-gray
       @media screen and (max-width: $break-small)
         max-width: 250px
+    
+  input
+    margin: 10px 0 0
+    background: #FFF
+    border: 1px solid #000
+    @media screen and (max-width: $break-small)
+      font-size: 12px
+
+    &:last-of-type
+      margin-left: 5px
+
+    &:hover
+      color: $default-red
+      @include transition(.4s)
+
+    &:focus,
+    &.active
+      outline: 0
+
+  span
+    opacity: 0
+    color: $default-red
+    font-size: 24px
+    @include transition(.4s)
+    @media screen and (max-width: $break-small)
+      font-size: 20px
+
+    &.selected,
+    &.selected-add.css-class-add-active
+      opacity: 1
+
+    &.selected-remove.css-class-remove-active
+      opacity: 0
+
+    &.selected-add, 
+    &.selected-remove
+      @include transition(.4s)
+
+
+
+
+
+
