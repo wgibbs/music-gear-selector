@@ -2,6 +2,7 @@
 $break-med: 700px
 $break-small: 480px
 $container-max: 960px
+$default-gray: #e2e2e2
 
 //Mixins
 @mixin transition($duration)
@@ -32,6 +33,8 @@ header
     background: #000
     width: 100%
     padding: 20px 0
+    border-top: 10px solid $default-gray
+    border-bottom: 10px solid $default-gray
 
     ul
       list-style: none
@@ -85,7 +88,7 @@ section
   margin: 0 auto
   padding: 20px 0
   text-align: center
-  background: #e2e2e2
+  background: $default-gray
   padding: 20px
 
   div
@@ -119,6 +122,6 @@ section
       color: #000
 
     img
-      border: 1px solid #e2e2e2
+      border: 1px solid $default-gray
       @media screen and (max-width: $break-small)
         max-width: 250px
