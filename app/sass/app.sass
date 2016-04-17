@@ -4,6 +4,9 @@ $break-small: 480px
 $container-max: 960px
 $default-gray: #e2e2e2
 $default-red: #F00
+$border-thin: 1px solid #000
+$border-med: 5px solid $default-gray
+$border-thick: 10px solid $default-gray
 
 //Mixins
 @mixin transition($duration)
@@ -23,19 +26,24 @@ header
     font-size: 30px
     margin: 0
     padding: 10px
+    display: inline-block
     @media screen and (max-width: $break-med)
       font-size: 26px
     @media screen and (max-width: $break-small)
       font-size: 20px
       padding: 5px
+
+  p
+    display: inline-block
+    position: relative
   
   nav
     margin: 0 auto 20px
     background: #000
     width: 100%
     padding: 20px 0
-    border-top: 10px solid $default-gray
-    border-bottom: 10px solid $default-gray
+    border-top: $border-thick
+    border-bottom: $border-thick
 
     ul
       list-style: none
@@ -69,30 +77,38 @@ header
 
          &.active
            color: $default-red
-    
-    label
+
+    label, p
       font-size: 14px
       color: #FFF
-      margin: 10px 0 0
-      display: block
+      display: inline-block
       text-transform: uppercase
+      @media screen and (max-width: $break-small)
+        font-size: 12px
+    
+    label
+      margin: 10px 0 0
       @media screen and (max-width: $break-small)
         font-size: 12px
 
       input
-        border: 5px solid $default-gray
+        border: $border-med
         padding: 3px
+
+    p
+      margin: 0 0 0 30px
+      @media screen and (max-width: $break-small)
+        margin: 0 0 0 15px
 
 section
   max-width: $container-max
   min-height: 400px
-  margin: 0 auto 100px auto
-  padding: 20px 0
+  margin: 20px auto 100px auto
   text-align: center
   background: $default-gray
   padding: 20px
-  border-top: 1px solid #000
-  border-bottom: 1px solid #000
+  border-top: $border-thin
+  border-bottom: $border-thin
 
   div
     max-width: 280px
@@ -132,12 +148,10 @@ section
   input
     margin: 10px 0 0
     background: #FFF
-    border: 1px solid #000
+    border: $border-thin
+    font-size: 14px
     @media screen and (max-width: $break-small)
       font-size: 12px
-
-    &:last-of-type
-      margin-left: 5px
 
     &:hover
       color: $default-red
@@ -146,28 +160,3 @@ section
     &:focus,
     &.active
       outline: 0
-
-  span
-    opacity: 0
-    color: $default-red
-    font-size: 24px
-    @include transition(.4s)
-    @media screen and (max-width: $break-small)
-      font-size: 20px
-
-    &.selected,
-    &.selected-add.css-class-add-active
-      opacity: 1
-
-    &.selected-remove.css-class-remove-active
-      opacity: 0
-
-    &.selected-add, 
-    &.selected-remove
-      @include transition(.4s)
-
-
-
-
-
-

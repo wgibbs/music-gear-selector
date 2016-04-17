@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="musicgearApp">
+<html lang="en" data-ng-app="musicgearApp">
 <head>
   <meta charset="utf-8">
   <title>Music Gear Selector</title>
@@ -13,26 +13,25 @@
   <script src="js/controllers.js"></script>
   <script src="js/unique.js"></script>
 </head>
-<body ng-controller="MusicItemCtrl">
+<body data-ng-controller="MusicItemCtrl">
   <header>
-    <h1>MUSIC GEAR SELECTOR</h1>
+    <h1>MUSIC GEAR SELECTOR</h1>    
     <nav>
       <ul>
-        <li><a href="" ng-click="filters.category = ''">All Items</a></li>
-        <li ng-repeat="item in items | unique: 'category'"><a href="" ng-click="filters.category = item.category">{{item.category}}</a></li>
+        <li><a href="" data-ng-click="filters.category = ''">All Items</a></li>
+        <li data-ng-repeat="item in items | unique: 'category'"><a href="" data-ng-click="filters.category = item.category">{{item.category}}</a></li>
       </ul>
-      <label>Search &#8594; <input ng-model="searchText"></label>
+      <label>Search &#8594; <input data-ng-model="searchText"></label>
+      <p>Cart: {{qty.length}}</p>
     </nav><!-- end nav -->
   </header><!-- end header -->
   <section>
-    <div ng-repeat="item in items | filter:filters | filter:searchText">
+    <div data-ng-repeat="item in items | filter:filters | filter:searchText">
       <img ng-src="{{item.imageUrl}}" alt="{{item.name}}">
       <h2>{{item.name}}</h2>
       <p>Condition: {{item.condition}}</p>
       <p>{{item.price}}</p>
-      <input type="button" value="select" ng-click="itemSelected='selected'">
-      <input type="button" value="remove" ng-click="itemSelected=''">
-      <span ng-class="itemSelected">&#10003;</span>
+      <input type="button" data-ng-click="addItem()" value="add to cart">
     </div><!-- end div -->
   </section><!-- end section -->
 </body>
