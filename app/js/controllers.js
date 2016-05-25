@@ -6,9 +6,9 @@ musicgearApp.controller('MusicItemCtrl', ['$scope', '$http', function($scope, $h
     $scope.filters = {};
     
     $scope.qty = [];
-	$scope.addItem = function(){
-      $scope.qty.push(this.item);
-    }
+      $scope.addItem = function(){
+        $scope.qty.push(this.item);
+      }
   });
 }]);
 
