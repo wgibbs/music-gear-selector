@@ -18,7 +18,11 @@
     "gulp-webserver": "^0.9.1",
     "sass-module-importer": "^1.4.0",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "yargs-parser": ">=13.1.2",
+    "node-sass": ">=4.13.1",
+    "lodash.template": ">=4.5.0",
+    "open": ">=6.0.0"
   },
   "dependencies": {
     "graceful-fs": "^4.2.4",
