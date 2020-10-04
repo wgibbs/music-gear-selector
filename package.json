@@ -13,7 +13,15 @@
   "homepage": "https://github.com/wgibbs/music-gear-selector#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.2.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "sass-module-importer": "^1.4.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.4",
+    "vinyl-fs": "^3.0.3"
   }
 }
